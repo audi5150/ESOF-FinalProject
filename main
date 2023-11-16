@@ -1,0 +1,30 @@
+import pygame as pg
+import sys
+from settings import *
+from tiles import Tile
+from level import Level
+from player import Player
+
+pg.init()
+screen = pg.display.set_mode((sc_wid,sc_hei))
+clock = pg.time.Clock()
+#testtile = pg.sprite.Group(Tile((100,100),200))
+level = Level(level_map,screen)
+
+#p1 = Player(50,450)
+run = True
+while run:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            run = False
+            pg.quit()
+            sys.exit()
+
+    
+    screen.fill('Black')
+    level.run()
+  
+    
+    
+    pg.display.update()
+    clock.tick(60)
