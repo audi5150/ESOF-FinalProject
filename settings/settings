@@ -1,0 +1,16 @@
+level_map = [
+'                                ',  
+'                   X            ',
+' XX         X  X                ',
+' XX         X  X   X            ',
+' XXXX       XXXX   X            ',
+' XXXXP      X  X   X            ',
+'            X  X                ',
+'                                ',
+'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ',
+'XXXXXXX          XXXXXXXXXXXXXXX']
+
+tile_size = 64
+sc_wid = 1000
+sc_hei = len(level_map)*tile_size
